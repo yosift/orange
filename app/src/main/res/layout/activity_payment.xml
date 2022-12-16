@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment">
+    <LinearLayout
+
+        android:id="@+id/uperbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="26dp"
+        >
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/arro_style"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/arro"
+            android:paddingStart="15dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="37dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="77dp"/>
+
+
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shipping"
+        android:layout_below="@+id/uperbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageView
+        android:id="@+id/pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paymentmethod"
+        android:layout_below="@+id/ship"
+
+        android:layout_marginLeft="25dp"/>
+    <ImageView
+        android:id="@+id/cridet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/creditcard"
+        android:layout_below="@+id/pay"
+        android:layout_marginTop="-65dp"
+        android:layout_marginLeft="25dp"/>
+    <LinearLayout
+        android:id="@+id/pri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/cridet"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:text="Total pay"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginLeft="150dp"
+            android:text="$58"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/comfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pri"
+        android:text="Confirm Order"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:background="@drawable/checkout_style"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+</RelativeLayout>

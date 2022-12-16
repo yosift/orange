@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rating">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="350dp"
+        android:layout_height="450px"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="26dp"
+
+        app:cardCornerRadius="15dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/pro_im"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/image_style"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/image" />
+            <ImageView
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:src="@drawable/logo_white_circle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"/>
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/arro_style"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/arro"
+                android:paddingStart="15dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/container"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Pizza Hut"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4102  Pretty View Lanenda"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Delivered"
+            android:textColor="#53D776"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:text="Please Rate Delivery Service"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good"
+            android:textColor="@color/orange"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textLongMessage"
+            android:hint="Write review"
+            android:background="@drawable/massage_style"
+            android:paddingStart="20dp"
+            android:paddingBottom="100dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:background="@drawable/checkout_style"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

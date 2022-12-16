@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/big"
+        android:layout_width="323dp"
+        android:layout_height="247.71dp"
+        android:layout_centerInParent="true"
+
+        android:background="@color/white"
+        app:cardCornerRadius="15dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="323dp"
+            android:layout_height="247.71dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hart" />
+
+                    <ImageView
+                        android:id="@+id/item_image"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/image_style"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/prod_1" />
+
+                    <ImageView
+                        android:id="@+id/item_hart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="250dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/hart" />
+
+                    <Button
+                        android:id="@+id/price_logo"
+                        android:layout_width="67dp"
+                        android:layout_height="28.07dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rating_style"
+                        android:text="9.5"
+                        android:drawableStart="@drawable/money8"
+                        android:drawablePadding="-30dp"
+                        android:paddingStart="10dp"
+
+                        />
+
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/item_btn_rating"
+                    android:layout_width="67dp"
+                    android:layout_height="28.07dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="130dp"
+                    android:background="@drawable/rating_style"
+
+                    android:paddingEnd="22.17dp"
+                    android:drawableEnd="@drawable/stare"
+                    android:text="4.4" />
+
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/container"
+
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Red n hot pizza"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/pref_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_name"
+
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Spicy chicken, beef"
+                    android:textColor="#5B5B5E"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="12sp" />
+
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

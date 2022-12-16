@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToCart">
+
+    <LinearLayout
+        android:id="@+id/uperbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="26dp"
+        >
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/arro_style"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/arro"
+            android:paddingStart="15dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="37dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="41dp"
+            android:layout_marginLeft="77dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/cartlogo" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yellow"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/white"
+
+/>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/uperbar"
+        android:layout_marginTop="29dp"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cart_Recylar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="25dp"
+
+                    >
+                    <EditText
+                        android:id="@+id/promocode"
+                        android:layout_width="324.01dp"
+                        android:layout_height="65dp"
+                        android:hint="Promo Code"
+                        android:background="@drawable/promo_code_style"
+                        android:padding="20dp"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/style"
+                        android:textColor="@color/white"
+                        android:text="Apply"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/promocode"
+                        android:layout_marginLeft="-105dp"
+                        />
+                </RelativeLayout>
+
+
+
+                <Button
+                    android:id="@+id/checkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="224dp"
+                    android:text="Checkout"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginBottom="60dp"
+                    android:background="@drawable/checkout_style"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

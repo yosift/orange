@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+     <androidx.cardview.widget.CardView
+
+         android:id="@+id/big"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+
+         android:background="@color/white"
+         app:cardCornerRadius="15dp"
+         >
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:cardCornerRadius="15dp">
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp">
+
+                         <ImageView
+
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:src="@drawable/hart" />
+
+                         <ImageView
+                             android:id="@+id/pro_im"
+
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:background="@drawable/image_style"
+                             android:scaleType="fitEnd"
+                             android:src="@drawable/image" />
+
+                         <ImageView
+                             android:id="@+id/hart_item"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="200dp"
+                             android:layout_marginTop="0dp"
+                             android:layout_marginRight="2dp"
+                             android:src="@drawable/hart" />
+
+                         <Button
+                             android:id="@+id/btn_rating"
+                             android:layout_width="67dp"
+                             android:layout_height="28.07dp"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="10dp"
+                             android:background="@drawable/rating_style"
+                             android:drawableEnd="@drawable/stare"
+                             android:paddingEnd="22.17dp"
+
+                             android:text="4.4" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/Resturan_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/container"
+
+                        android:layout_marginStart="11dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="McDonald’s"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/container"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_toRightOf="@+id/Resturan_name"
+                        android:src="@drawable/true1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Resturan_name"
+                        android:orientation="vertical">
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:orientation="horizontal">
+
+                              <TextView
+                                  android:id="@+id/delivary"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="11.73dp"
+                                  android:layout_marginTop="11.83dp"
+                                  android:drawableStart="@drawable/motocicle"
+                                  android:drawablePadding="4.22dp"
+                                  android:padding="4.22dp"
+                                  android:text="free delivery"
+                                  android:textColor="#5B5B5E" />
+
+
+                              <TextView
+                                  android:id="@+id/time"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginStart="11.73dp"
+                                  android:layout_marginTop="11.83dp"
+                                  android:drawableStart="@drawable/timer"
+                                  android:drawablePadding="4.22dp"
+                                  android:padding="4.22dp"
+                                  android:text="10-15 mins"
+                                  android:textColor="#5B5B5E" />
+
+                         </LinearLayout>
+
+                         <LinearLayout
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_marginLeft="15dp"
+                             android:layout_marginTop="14dp"
+                             android:layout_marginBottom="14dp"
+                             android:orientation="horizontal">
+
+                              <Button
+                                  android:id="@+id/bt1"
+                                  android:layout_width="77dp"
+                                  android:layout_height="32dp"
+                                  android:text="Burger"
+                                  android:textColor="#515154"
+                                  android:textSize="12sp" />
+
+                              <Button
+                                  android:id="@+id/bt2"
+                                  android:layout_width="77dp"
+                                  android:layout_height="32dp"
+                                  android:text="Chicken"
+                                  android:textColor="#515154"
+                                  android:textSize="12sp" />
+
+                              <Button
+                                  android:id="@+id/bt3"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="32dp"
+                                  android:text="Fast Food"
+                                  android:textColor="#515154"
+                                  android:textSize="12sp" />
+                         </LinearLayout>
+                    </LinearLayout>
+
+
+               </RelativeLayout>
+
+          </androidx.cardview.widget.CardView>
+     </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

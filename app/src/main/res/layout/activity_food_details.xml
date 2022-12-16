@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Food_details">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="350dp"
+        android:layout_height="500px"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="26dp"
+
+        app:cardCornerRadius="15dp">
+
+    <ImageView
+        android:id="@+id/pro_im"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_style"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_btn"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/arro_style"
+                android:backgroundTint="@color/white"
+                android:drawableStart="@drawable/arro"
+                android:paddingStart="15dp"
+
+                />
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hart"
+                android:layout_marginLeft="210dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ground Beef Tacos"
+        android:layout_below="@+id/container"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/rating_text_from_Food_details"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/st1s"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8.53dp"
+        android:text="4.5"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/container_food_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rating_text_from_Food_details"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:id="@+id/pr_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="$9.50"/>
+        <Button
+            android:layout_width="33.6dp"
+            android:layout_height="33.6dp"
+            android:layout_marginLeft="190dp"
+            android:textColor="@color/orange"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/line_71"
+            android:padding="11dp"
+            android:background="@drawable/minus_style"
+            />
+        <TextView
+            android:id="@+id/qun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="33.6dp"
+            android:layout_height="33.6dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/orange"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+
+            android:padding="11dp"
+            android:background="@drawable/plus_style"
+            />
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/description_for_food_items"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh  chopped. Spices – chili powder, cumin, onion powder."
+        android:layout_below="@+id/container_food_details"
+        android:layout_marginLeft="26dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#9796A1"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:id="@+id/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choice of Add On"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/description_for_food_items"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/choice"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1"
+            />
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2"
+            />
+        <ImageView
+            android:id="@+id/im3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img3"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/choice"
+        android:layout_toEndOf="@+id/added"
+        android:layout_marginLeft="230dp"
+
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$21"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="$21"
+            />
+
+        <TextView
+            android:id="@+id/price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="$21"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice"
+        android:layout_toEndOf="@+id/prices"
+        android:layout_marginLeft="10dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+             />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+             />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_to_cart"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/prices"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange">
+
+
+            <ImageView
+                android:id="@+id/cart_image"
+                android:layout_width="131dp"
+                android:layout_height="87dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/c1"
+                android:scaleType="centerCrop"
+                />
+        <TextView
+            android:id="@+id/cart_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red n hot pizza"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="180dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cart_pref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red n hot pizza"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="180dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#9796A1"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:id="@+id/container_food_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rating_text_from_Food_details"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="70dp"
+            >
+            <TextView
+                android:id="@+id/cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:text="$9.50"/>
+            <Button
+                android:layout_width="33.6dp"
+                android:layout_height="33.6dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/orange"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+                android:drawableStart="@drawable/line_71"
+                android:padding="11dp"
+                android:background="@drawable/minus_style"
+                />
+            <TextView
+                android:id="@+id/cart_quantite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-black"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:layout_width="33.6dp"
+                android:layout_height="33.6dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:layout_marginTop="8dp"
+                android:textSize="20sp"
+
+                android:padding="11dp"
+                android:background="@drawable/plus_style"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

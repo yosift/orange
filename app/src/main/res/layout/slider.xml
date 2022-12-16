@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/s_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/im1"
+        android:layout_marginTop="40dp"
+        />
+    <ImageView
+        android:id="@+id/curser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/s3"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/title"/>
+
+
+    <TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Browse your  menu \n and order directly"
+    android:textColor="@color/black"
+    android:textSize="36sp"
+    android:fontFamily="sans-serif-medium"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="436dp"
+    />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our app can send you everywhere, even \n space. For only $2.99 per month"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="40dp"
+        android:textSize="17sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#616772"/>
+
+
+    <Button
+        android:id="@+id/yosid"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:paddingStart="23dp"
+        android:drawableStart="@drawable/ic_baseline_arrow_forward_24"
+        android:background="@drawable/next_style"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:onClick="cli"
+
+        />
+
+
+
+
+
+</RelativeLayout>

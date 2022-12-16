@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/i1"
+        android:title="My Orders" android:icon="@drawable/my_orders"/>
+    <item android:id="@+id/i2"
+        android:title="My Profile" android:icon="@drawable/profile"/>
+    <item android:id="@+id/i3"
+        android:title="Delivery Address" android:icon="@drawable/location"/>
+    <item android:id="@+id/i4"
+        android:title="Payment Methods" android:icon="@drawable/wallet"/>
+    <item android:id="@+id/i5"
+        android:title="Contact Us" android:icon="@drawable/message"/>
+    <item android:id="@+id/i6"
+        android:title="Settings" android:icon="@drawable/setting"/>
+
+    <item android:id="@+id/i7"
+        android:title="Helps and FAQs" android:icon="@drawable/helps"/>
+
+
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".profile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="285dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitStart"
+
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/profile_uper_images"/> />
+
+    <Button
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:drawableStart="@drawable/arro"
+        android:background="@drawable/arro_style"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+        android:paddingStart="17dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_marginLeft="121.68dp"
+        android:layout_marginTop="101.68dp"
+        />
+
+    <ImageView
+        android:id="@+id/persom_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle_profile"
+        android:layout_marginLeft="90.68dp"
+        android:layout_marginTop="87dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="175dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/small_circle"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/persom_im"
+        android:layout_marginTop="-25dp"
+        >
+        <TextView
+
+            android:id="@+id/User_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eljad Eendaz"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="28dp"
+            />
+        <TextView
+            android:layout_below="@+id/User_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prelookstudio@gmail.com"
+            android:textSize="12sp"
+            android:layout_marginLeft="28dp"
+            android:textColor="#9796A1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="34.92dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
